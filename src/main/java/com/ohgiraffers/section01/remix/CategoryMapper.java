@@ -1,5 +1,7 @@
 package com.ohgiraffers.section01.remix;
 
+import com.ohgiraffers.section01.remix.CategoryDTO;
+
 import java.util.List;
 
 public interface CategoryMapper {

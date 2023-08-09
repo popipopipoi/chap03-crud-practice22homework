@@ -5,13 +5,13 @@
 
 <mapper namespace="com.ohgiraffers.section01.remix.CategoryMapper">
 
-    <resultMap id="categoryResultMap" type="com.ohgiraffers.section01.remix.CategoryDTO">
+    <resultMap type="com.ohgiraffers.section01.remix.CategoryDTO" id="categoryResultMap" >
         <id property="categoryCode" column="CATEGORY_CODE"/>
         <result property="categoryName" column="CATEGORY_NAME"/>
         <result property="refCategoryCode" column="REF_CATEGORY_CODE"/>
     </resultMap>
 
-    <select id="selectAllCategory" resultType="categoryResultMap">
+    <select id="selectAllCategory" resultMap="categoryResultMap">
         SELECT
                CATEGORY_CODE
              , CATEGORY_NAME
